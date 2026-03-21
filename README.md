@@ -1,12 +1,44 @@
 # Projeto_envio_WhatsApp_com_Excel_e_VBA
+
 Projeto feito para envio de mensagens via WhatsApp, utilizando automação do VBA do Excel.
 
 ***
 
-# WhatsApp Sender VBA 📱  
+# WhatsApp Sender VBA 📱
 
 Este projeto permite o **envio automatizado de mensagens pelo WhatsApp Web** utilizando **VBA no Excel**.  
 Ideal para comunicações em massa — como mensagens personalizadas de aviso, lembretes, marketing ou notificações — de forma simples, sem necessidade de APIs externas.
+
+***
+
+## 📦 Versão Atual
+
+**v1.0.2**  
+Última atualização: March 21, 2026  
+Publicado no GitHub: [link do seu repositório aqui]
+
+***
+
+## 📜 Changelog (Histórico de Versões)
+
+### v1.0.2
+- Adicionados arquivos de automação fora do Excel:  
+  - `PARAR_ENVIO.bat` → interrompe o envio em execução.  
+  - `atualizar.bat` → script que atualiza o projeto automaticamente via `git pull` (para uso em máquina de terceiros, como do seu pai).  
+- Otimização da lógica de execução para permitir controle mais fácil do processo (início e interrupção).  
+- Ajustes de organização de pastas e clareza do fluxo de atualização.
+
+### v1.0.1
+- Correção de bug de autoclasse quando o número de telefone contém sufixo no WhatsApp.  
+- Melhorias na lógica de delay entre envios, aumentando a robustez contra travas.  
+- Pequenos ajustes de mensagem de erro e feedback ao usuário.
+
+### v1.0.0 (Primeira versão pública)
+- Implementação inicial da macro `EnviarWhatsApp`.
+- Estrutura básica de planilha de contatos e mensagem.
+- Lógica inicial de envio em massa com delay aleatório.
+
+*(Adicione novas versões aqui conforme for atualizando o projeto.)*
 
 ***
 
@@ -62,9 +94,9 @@ Macro principal que:
 
 O intervalo entre mensagens é sorteado aleatoriamente entre dois valores (mínimo e máximo):
 
-\[
-\text{Delay} = \text{Int}((\text{MaxTempo} - \text{MinTempo} + 1) * Rnd + \text{MinTempo})
-\]
+\\[
+\\text{Delay} = \\text{Int}((\\text{MaxTempo} - \\text{MinTempo} + 1) * Rnd + \\text{MinTempo})
+\\]
 
 Isso ajuda a simular comportamento humano e evitar bloqueios automáticos.
 
@@ -109,5 +141,3 @@ Isso ajuda a simular comportamento humano e evitar bloqueios automáticos.
 ## 🧑‍💻 Autor
 **Victor Almeida Araújo**  
 Automação VBA + Integração WhatsApp Web  
-
-***
