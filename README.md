@@ -15,7 +15,7 @@ Ideal para comunicações em massa — como mensagens personalizadas de aviso, l
 
 **v1.0.2**  
 Última atualização: March 21, 2026  
-Publicado no GitHub: [link do seu repositório aqui]
+Publicado no GitHub: teste
 
 ***
 
