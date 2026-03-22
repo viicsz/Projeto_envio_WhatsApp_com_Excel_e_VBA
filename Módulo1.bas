@@ -40,6 +40,8 @@ Sub EnviarWhatsApp()
         Application.SendKeys "{TAB}"
         Application.Wait Now + TimeValue("00:00:01")
         Application.SendKeys "^v"
+        Application.Wait Now + TimeValue("00:00:01")
+        Application.SendKeys "~"
         Application.Wait Now + TimeValue("00:00:02")
         Application.SendKeys "{TAB}"
         Application.Wait Now + TimeValue("00:00:01")
