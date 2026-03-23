@@ -40,9 +40,9 @@ Sub EnviarWhatsApp()
         Application.SendKeys "{TAB}"
         Application.Wait Now + TimeValue("00:00:01")
         Application.SendKeys "^v"
-        Application.Wait Now + TimeValue("00:00:01")
+        Application.Wait Now + TimeValue("00:00:02")
         Application.SendKeys "~"
-        Application.Wait Now + TimeValue("00:00:03")
+        Application.Wait Now + TimeValue("00:00:06")
         Application.SendKeys "{TAB}"
         Application.Wait Now + TimeValue("00:00:01")
         Application.SendKeys "{TAB}"
@@ -52,9 +52,9 @@ Sub EnviarWhatsApp()
 
         ' MENSAGEM A2 da Planilha2!
         CopiaTextoPuro ws2.Cells(2, 1) ' ? Planilha2!A2
-        Application.Wait Now + TimeValue("00:00:01")
+        Application.Wait Now + TimeValue("00:00:02")
         Application.SendKeys "^v"
-        Application.Wait Now + TimeValue("00:00:01")
+        Application.Wait Now + TimeValue("00:00:02")
         Application.SendKeys "~"
 
         Application.SendKeys "{TAB}"
